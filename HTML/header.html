@@ -1,0 +1,66 @@
+	<header class="wrapper top bg-header">
+				<div class="ch-g1 header-top">
+					<div class="ch-container">
+					#if( $hasLogo )
+					<figure class="component img-logo">
+						<a href="/" title="Inicio">
+							<img src="/images/logo.jpg?" alt="raldezamacona" title="raldezamacona" /></a>
+					</figure>
+					#else
+						<div class="component txt-logo">
+							<a href="/" title="Inicio" class="logo">lotus-flower</a>
+						</div>
+					#end
+						<div id="searchWrap" class="searchWrapper clearfix">
+							<div class="component searchBar">
+								<form id="searchForm" method="get" action="/jm/com.mercadoshops.web.frontend.page.PageController">
+									<input type="hidden" name="view" value="result">
+									<input id="search" type="search" name="q" value="" class="inputField">
+									<input type="submit" value="" class="ch-btn ch-secondary button">
+								</form> 
+							</div>#if( $shopHasCart )
+							<div id="cart" class="component cartButton">
+								<a href="/cart" title="Ver Carrito" rel="nofollow" class="ch-btn ch-secondary button"></a>
+							</div>
+							#end
+						</div>
+					</div>
+				</div>
+
+			<div class=" ch-g1 clearfix border navWrapper">
+				<div class="ch-g1-5 ">
+					<div class="ch-container clearfix">
+		#if( $hasOnlyOneCategory )
+			<a href="$uniqueCategory.url" class="no-categ link ch-btn ch-secondary button">Todos los productos</a>
+		#else
+			<div id="categDrop" class="component categoriesList ch-dropdown">
+				<p class="button categories">Categorías</p>
+				<ul style="display:none;">
+								<li>
+						<a href="/campo_qO13263500XtOcxSM">Campo</a>
+					</li>
+							</ul>
+			</div>
+		#end
+
+					</div>
+				</div>
+				<div class="ch-g4-5">
+					<div class="ch-container clearfix">
+						<ul class="component simpleMenu clearfix">
+							#foreach( $menuItem in $menuItemList )
+								#if( $menuItem.isFirstItem )
+								<li class="first">
+									<a href="$menuItem.target" title="" class="link" data-name="$menuItem.name" data-isFirstItem="$menuItem.isFirstItem" data-target="$menuItem.target" data-noFollow="$menuItem.noFollow" data-linkTarget="$menuItem.linkTarget">$menuItem.name</a>
+								</li>
+								#else
+								<li class="">
+									<a href="$menuItem.target" #if($menuItem.noFollow) rel="nofollow" #end title="" class="link" target="$menuItem.linkTarget" data-name="$menuItem.name" data-isFirstItem="$menuItem.isFirstItem" data-target="$menuItem.target" data-noFollow="$menuItem.noFollow" data-linkTarget="$menuItem.linkTarget">$menuItem.name</a>
+								</li>
+								#end
+							#end
+						</ul>
+					</div>
+				</div>
+			</div>
+	</header>

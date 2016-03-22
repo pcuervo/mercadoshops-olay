@@ -1,0 +1,197 @@
+/* Escribe aquí las clases que quieras personalizar. Consulta la documentación en http://blog.mercadoshops.com/html/#EditandoCSS */
+
+.mainContent .ch-container{ margin-top: 120px}
+
+.bg-header{ position: fixed;top: 0; left: 0;width: 100%;z-index: 999; background-color: #000000; }
+
+.bg-footer{ position: absolute; bottom: 0; left:0;width: 100%;z-index: 999; background-color: #000000; }
+
+.component.img-logo img { max-width: 20%;}
+
+#searchWrap .component.cartButton .button{
+	background: url('../images/shopping-cart.png') center center no-repeat;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+    right: 90px;
+    top: -3px;
+    border: none;
+}
+
+#searchWrap .component.searchBar #searchForm .inputField {
+    width: 200px;
+    margin-left: 20px;
+    border-radius: 50px;
+}
+
+
+
+#searchWrap .button {
+	background: url('../images/search.png') center center no-repeat;
+	width: 30px;
+	height: 30px;
+	display: inline;
+	border: none;
+}
+
+.browser {
+    position: absolute;
+    width: 280px;
+    z-index: 22;
+    top: 130px;
+    left: 56%;
+    margin-left: -140px;
+}
+
+.component.simpleMenu{ background: none; color: #D3B840; }
+.component.simpleMenu li { margin: 0 30px; }
+.component.simpleMenu li a { font-size: 18px; text-transform: uppercase; color: #D3B840;}
+
+
+@media screen and (max-width: 1023px){
+	.component.simpleMenuDrop.ch-dropdown p.button {
+		display: block;
+		background: url('../images/navigation.png') center center no-repeat;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+		position: absolute;
+		top: 10px;
+		right: 50px;
+		z-index: 99;
+		border: none;
+		-webkit-transition: all .5s ease;
+		-moz-transition: all .5s ease;
+		-ms-transition: all .5s ease;
+		-o-transition: all .5s ease;
+		transition: all .5s ease;
+	}
+}
+
+
+.component.addressExtended .companyData dt, .component.addressExtended .companyData dd{
+	color: #fff;
+}
+
+
+/* Content */
+.ch-dropdown-content {
+	background-color: #292929;
+	/* max-height: 215px; */
+	width: 100%;
+	overflow: auto;
+	white-space: nowrap;
+	box-shadow: 2px 2px 2px rgba(100, 100, 100, .1);
+	border: none;
+}
+
+/* List of links */
+.ch-dropdown-content li a {
+	color: #D3B840;
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	margin: 5px;
+	padding: 0 20px 0 5px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.component.simpleMenuDrop.ch-dropdown ul.ch-points-ltlb{
+	left: 0px !important;
+}
+
+#searchWrap input.button {
+    display: inline;
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Text Alignment
+
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+
+// Text Transformation
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
+
+.text-shadow { text-shadow: 2px 2px 1px #222222;}
+
+
+
+
+//Box model
+
+.width-auto { width: auto!important;}
+.width-100  { width: 100%;}
+
+
+
+.padding 		{ padding: 12px 24px;}
+
+.no-margin 		{ margin: 0 !important;}
+.margin-top-10	{ margin-top: 10%;}
+
+.color-light 	{ color: #fff;}
+
+
+
+
+
+/*
+
+.main{
+	width: 100%;
+	height: 250px;
+	background-image: url('../images/msh.jpg')
+	h3{
+		font-size: 2em;
+	}
+}
+
+.bg-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+ */
+
+
+//Buttons
+
+.btn-compra{
+	background-color: #D3B840;
+ 	border: 1px solid rgba(211, 184, 64, 0.5);
+ 	display:inline-block;
+ 	cursor:pointer;
+ 	color: #fff;
+ 	font-size:17px;
+	padding:16px 31px;
+	text-decoration: none;
+	text-shadow:0px 1px 0px #2f6627;
+ }
+
+.btn-compra:hover {
+	background-color:darken(211, 184, 64, 0.5, 10%);
+}
+.btn-compra:active {
+	background-color:darken(211, 184, 64, 0.5, 10%);
+	position:relative;
+	transition
+	top:1px;
+}

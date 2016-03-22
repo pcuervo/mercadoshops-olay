@@ -1,0 +1,49 @@
+
+
+
+<footer class="ch-g1 wrapper bottom clearfix bg-footer">
+	<div class="ch-container">
+	<input type="submit" value="Encuentra tu tratamiento " class="ch-btn ch-secondary button btn-compra">
+	<a href="" class="btn-compra">Encuentra tu tratamiento</a>
+	<div class="[ text-center ]">
+		<img src="images/spa-flower-lotus-2.png" alt="">
+	</div>
+
+
+<address class="component addressExtended link">
+    <dl class="companyData">
+        <dt class="text-uppercase"><strong>Contacto</strong></dt>
+		<dd>raldezamacona</dd>
+		#if($showContactFooter)
+				        <dd>Aguascalientes</dd>
+				        	        <dd> 5543367589</dd>
+	                #end
+		<dd>
+			<a href="/contact">Contáctanos</a>
+		</dd>
+    </dl>
+
+    <dl class="socialData">
+		<dt>
+			Seguinos:
+		</dt>
+		<dd id="fb-button">
+
+		</dd>
+		<g:plusone size="medium" count="false" href="http://www.idjamtothat.com"></g:plusone>
+	</dl>
+
+	</address>
+
+#if($hasEbitStamp)
+	<div class="dataEbit">
+	<a id="seloEbit" href="http://www.ebit.com.br/#$ebitStoreName" target="_blank" onclick="redir(this.href);">Avaliação de Lojas e-bit</a>
+	<script type="text/javascript" id="getSelo" src="https://a248.e.akamai.net/f/248/52872/0s/img.ebit.com.br/ebitBR/selo-ebit/js/getSelo.js?$ebitId" defer="defer">
+	</script>
+	<div style="clear:both;"></div>
+</div>
+<div style="clear:both;"></div>#end
+ <!-- footer left -->
+	</div>
+		<div class="component mshops">Powered by <a class="link" href="http://www.mercadoshops.com.mx" title="MercadoShops">MercadoShops</a></div>
+	</footer>
